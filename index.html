@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+</head>
+
+<body style="background-color: #e6e6fa;" data-spy="scroll" data-target=".navbar" data-offset="20">
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script>
+            $(document).ready(function(){
+              // Initialize Tooltip
+              $('[data-toggle="tooltip"]').tooltip(); 
+              
+              // Add smooth scrolling to all links in navbar + footer link
+              $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+            
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 900, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            })
+            </script>
+
+    <div class="container-fluid bg">
+        <br><br><br>
+        <!--background-->
+        <div class="inner-container">
+            <form>
+                <div class="col-xs-4 col-sm-3 col-md-3 input-group input-group-lg  srcbar" id="myInput">
+                    <input type="text" class="form-control " placeholder="search">
+                    <div class="input-group-btn ">
+                        <button type="submit" class=" btn btn-info form-control"><span
+                                class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="scrolling">
+            <h1>traditional Indian foods.taste like your's home</h1>
+        </div>
+        <img class="logo" src="images/1671428050899.png" alt="">
+        <a class="bkbtn" href="#bkmodal" data-toggle="modal"><button class="btn btn-info btn-lg">booking</button></a>
+    </div>
+    <div class="container-fluid" style="background-color: gray;">
+
+
+        <div class="row">
+            <div class="col-sm-6 sbtn"><button class="sbtn">Fastest Home Delivery</button></div>
+            <div class="col-sm-6 sbtn2"><button class="sbtn">24*7 Available</button></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="800">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+            <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="nav navbar-nav">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#menu">Menu<span
+                        class="caret"></span></a>
+                <ul class="dropdown-menu" id="accordion" style="font-size: 21px;">
+                    <li data-parent="accordion"><a href="#item1" data-toggle="collapse">Veg</a></li>
+                    <li data-parent="accordion"><a href="#item2" data-toggle="collapse">Non-veg</a></li>
+                    <li data-parent="accordion"><a href="#item3" data-toggle="collapse">Bread & Rice</a></li>
+                    <li data-parent="accordion"><a href="#item4" data-toggle="collapse">Salad</a></li>
+                    <li data-parent="accordion"><a href=" #item5" data-toggle="collapse">Drinks</a></li>
+                </ul>
+            </li>
+            <li><a href="#about" data-toggle="collapse">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart" data-toggle="modal"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                  </ul>
+            </div>
+    </nav>
+    <!--menu items1-->
+    <div id="accordion">
+        <div class="container-fluid collapse" id="item1">
+            <h1 style="text-align: center; text-decoration: underline brown 3px;">Veg-items</h1>
+            <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/paneer-butter-masala-1-1152x1536.webp" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-paneer</h1> <p class=" pull-right"style="color:red;">rs:-300/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/paneer-butter-masala-1-1152x1536.webp" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-paneer</h1> <p class=" pull-right"style="color:red;">rs:-300/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/paneer-butter-masala-1-1152x1536.webp" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-paneer</h1> <p class=" pull-right"style="color:red;">rs:-300/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/paneer-butter-masala-1-1152x1536.webp" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-paneer</h1> <p class=" pull-right"style="color:red;">rs:-300/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/paneer-butter-masala-1-1152x1536.webp" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-paneer</h1> <p class=" pull-right"style="color:red;">rs:-300/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/paneer-butter-masala-1-1152x1536.webp" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-paneer</h1> <p class=" pull-right"style="color:red;">rs:-300/-</p>
+                    </caption>
+                </a></div>
+                <div class="clearfix visibile-xs"></div>
+                    <div class="clearfix visiblle-sm"></div>
+            
+        </div>
+        <!-- menu item2-->
+        <div class="container-fluid collapse" id="item2"style="background-color: #d3d3d3;">
+                <h1  style="text-align: center; text-decoration: underline brown 3px;">Non-veg-items</h1>
+            <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/butter_chicken_2-1-768x512-408x272.jpg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-chiken</h1><p class=" pull-right"style="color:red;">rs:-450/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/fish-curry-recipe-in-hindi-17-421x272.png" alt="1">
+                    <caption>
+                        <h1 style="text-align: center">Fish curry</h1><p class=" pull-right"style="color:red;">rs:-400/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/butter_chicken_2-1-768x512-408x272.jpg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-chiken</h1><p class=" pull-right"style="color:red;">rs:-450/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/butter_chicken_2-1-768x512-408x272.jpg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-chiken</h1><p class=" pull-right"style="color:red;">rs:-450/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/butter_chicken_2-1-768x512-408x272.jpg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-chiken</h1><p class=" pull-right"style="color:red;">rs:-450/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/butter_chicken_2-1-768x512-408x272.jpg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">butter-chiken</h1><p class=" pull-right"style="color:red;">rs:-450/-</p>
+                    </caption>
+                </a></div>
+                <div class="clearfix visibile-xs"></div>
+                    <div class="clearfix visiblle-sm"></div>
+
+        </div>
+        <!-- menu item3-->
+
+        <div class="container-fluid collapse" id="item3" >
+                <h1  style="text-align: center; text-decoration: underline brown 3px;">breads & Rice</h1>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/rice.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">Jeera-rice</h1><p class=" pull-right"style="color:red;">rs:-100/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/naan-leavened-indian-flatbread-1957348-final-08-116a2e523f6e4ee693b1a9655784d9b9.jpg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">Naan</h1><p class=" pull-right"style="color:red;">rs:-30/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/rice.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">Jeera-rice</h1><p class=" pull-right"style="color:red;">rs:-100/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/rice.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">Jeera-rice</h1><p class=" pull-right"style="color:red;">rs:-100/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/rice.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">Jeera-rice</h1><p class=" pull-right"style="color:red;">rs:-100/-</p>
+                    </caption>
+                </a></div>
+              
+         <div class="clearfix visibile-xs"></div>
+         <div class="clearfix visiblle-sm"></div>
+        </div>
+        <!-- menu item4-->
+
+        <div class="container-fluid collapse" id="item4" style="background-color:#d3d3d3">
+                <h1  style="text-align: center; text-decoration: underline brown 3px;">Salad</h1>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/salad.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">Salad</h1><p class=" pull-right"style="color:red;">rs:-80/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/salad.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">Salad</h1><p class=" pull-right"style="color:red;">rs:-80/-</p>
+                    </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/salad.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">Salad</h1><p class=" pull-right"style="color:red;">rs:-80/-</p>
+                    </caption>
+                </a></div>
+           
+           
+                <div class="clearfix visibile-xs"></div>
+                    <div class="clearfix visiblle-sm"></div>
+        </div>
+        <!-- menu item5-->
+
+        <div class="container-fluid collapse" id="item5" >
+                <h1  style="text-align: center; text-decoration: underline brown 3px;">Drinks</h1>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/drin.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">strawberry-drink</h1><p class=" pull-right"style="color:red;">rs:-100/-</p>                 </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/drin.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">strawberry-drink</h1><p class=" pull-right"style="color:red;">rs:-100/-</p>                 </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/drin.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">strawberry-drink</h1><p class=" pull-right"style="color:red;">rs:-100/-</p>                 </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/drin.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">strawberry-drink</h1><p class=" pull-right"style="color:red;">rs:-100/-</p>                 </caption>
+                </a></div>
+                <div class="col-xs-6 col-sm-3 thumbnail"><a><img src="images/drin.jpeg" alt="1">
+                    <caption>
+                        <h1 style="text-align:center;">strawberry-drink</h1><p class=" pull-right"style="color:red;">rs:-100/-</p>                 </caption>
+                </a></div>
+                <div class="clearfix visibile-xs"></div>
+                    <div class="clearfix visiblle-sm"></div>
+        </div>
+        <div class="collapse in" id="about">
+            <h3 style="text-align: center;text-decoration: underline brown 3px">Our Specalities</h3>
+            <ul style="list-style:none; font-size:20px;color:blue;text-align: justify">
+                <li>Chiken tandoori</li>
+                <li>Butter paneer</li>
+                <li>Dal makhni</li>
+                <li>Mutton Dishes</li>
+
+            </ul>
+            <!--carousels-->
+            <div class="carousel slide" id="mycarousel" data-ride="carousel" style="margin: 0px 13%">
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active"><img style="width:100%;height: 70vh; " src="images/chef.jpeg" alt="5"> <div class="carousel-caption"> <h1 >Best chefs from Indian Restros.</h1></div></div>
+                    <div class="item"><img style="width:100%;height:70vh; " src="images/tabcr.jpeg" alt="r"> <div class="carousel-caption"> <h1 >Garden views.</h1></div></div>
+                    <div class="item"><img style="width:100%;height: 70vh; " src="images/veg.jpeg" alt="th"> <div class="carousel-caption"> <h1 >vegetables from our farms.</h1></div></div>
+                </div>
+            </div>
+            <a href="#mycarousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">previous</span>
+            </a>
+            <a href="#mycarousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid" id="contact">
+        <h3 style="text-align: center;color:blue; text-decoration: underline;font-size:3em;font-family: cursive;">
+            Contact</h3>
+        <div class="loc"><a href="#"><i class="fa-solid fa-location-dot "></i> <strong>
+                    tehta math,jehanabad,bihar </strong></a></div><br>
+        <div class="email"><a href="#"><i class="fa-regular fa-envelope"></i> <strong>
+                    raj8789377224@gmail.com</strong></a></div><br>
+        <div class="phone"><a href="#"><i class="fa-solid fa-phone"></i> <strong> +918789377224 </strong></a></div>
+        <div style="height:auto;overflow: auto;">
+            <h3 style="color: blue;font-size:34px;text-align:center;text-decoration:underline;height: auto;">social</h3>
+            <a href="#" class=" col-sm-3 col-xs-12 fb"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class=" col-sm-3 col-xs-12 insta"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class=" col-sm-3 col-xs-12 wts"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="container-fluid" id="feedback">
+            <div class="col-md-4 col-sm-6 col-xs-12 int"><input class="input-lg" type="text" placeholder="your name"
+                    name="name"> </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 int"><input class="input-lg" type="text" placeholder="your email"
+                    name="email"> </div>
+            <div class=" col-md-4 col-sm-6 col-xs-12 int"><input class="input-lg" type="text" placeholder="subject"
+                    name="subject"> </div>
+            <div class="clearfix visible-sm"></div> <br><br> <br>
+            <div id="comment"> <textarea name="message" id="comment" cols="40" rows="10" name="comment"
+                    placeholder="feedback"></textarea>
+                <a><button type="submit" class="btn btn-success">Send</button></a>
+            </div>
+            <hr>
+            <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
+                    <span class="glyphicon glyphicon-chevron-up"></span> </a>
+        <h5> @ copyright all rights reserve to Abhi.</h5>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- modal for booking-->
+    <div class="modal fade" id="bkmodal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><h1 style="text-align: center">
+                    <span class="glyphicon glyphicon-lock">Booking</span></h1>
+                </div>
+                <div class="modal-body">
+                    <div class="thumbnail col-xs-6 col-sm-3">
+                        <a href="#images/tab.jpeg"> <img src="images/tab.jpeg" style="width:150px;height: 100px;"
+                                alt=""> <caption>this is corner table.</caption></a>
+                       
+                    </div>
+                    <div class="thumbnail col-xs-6 col-sm-3">
+                        <a href="#images/tab.jpeg"> <img src="images/tab.jpeg" style="width:150px;height: 100px;"
+                                alt=""> <caption>this is corner table.</caption></a>
+                       
+                    </div>
+                    <div class="thumbnail col-xs-6 col-sm-3">
+                        <a href="#images/tab.jpeg"> <img src="images/tab.jpeg" style="width:150px;height: 100px;"
+                                alt=""> <caption>this is corner table.</caption></a>
+                       
+                    </div>
+                    <div class="thumbnail col-xs-6 col-sm-3">
+                        <a href="#images/tab.jpeg"> <img src="images/tab.jpeg" style="width:150px;height: 100px;"
+                                alt=""> <caption>this is corner table.</caption></a>
+                       
+                    </div>
+                    <div class="thumbnail col-xs-6 col-sm-3">
+                        <a href="#images/tab.jpeg"> <img src="images/tab.jpeg" style="width:150px;height: 100px;"
+                                alt=""> <caption>this is corner table.</caption></a>
+                       
+                    </div>
+                    <div class="thumbnail col-xs-6 col-sm-3">
+                        <a href="#images/tab.jpeg"> <img src="images/tab.jpeg" style="width:150px;height: 100px;"
+                                alt=""> <caption>this is corner table.</caption></a>
+                       
+                    </div>
+                    <div class="thumbnail col-xs-6 col-sm-3">
+                        <a href="#images/tab.jpeg"> <img src="images/tab.jpeg" style="width:150px;height: 100px;"
+                                alt=""> <caption>this is corner table.</caption></a>
+                       
+                    </div>
+            
+                    <div class="clearfix visibile-xs"></div>
+                    <div class="clearfix visiblle-sm"></div>
+                    <div class="form-group">
+                        <label for="mail">Email:-</label><br>
+                        <input style="width:100%;" type="character" name="mail" id="" value="your email">
+                    </div>
+                    <div class="form-group ">
+                        <label for="mob">mobile no:-</label> <br>
+                        <input style="width:100%;" type="text" name="mob" value="your mobile no">
+                    </div>
+                    <span> <label for="Date">Date:-</label> <input type="date" name="" id=""></span> <span><label for="time">Time:-</label> <input type="time" name="" id=""></span>
+                    <button type="submit" class="btn btn-success center" style="width:100%;"><span>payment</span></button>
+                    <h4>note:-we can decorate table for any type of occasion. kindly contact us.</h4>
+                </div>
+                <div class="modal-footer">
+                    <p>need<a href="#">help?</a></p>
+                    <button type="submit" class="btn btn-danger close pull-left" data-dismiss="modal"> <span
+                            class="glyphicon glyphicon-remove">cancel</span></button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- modal for cart
+-->
+    <div class="modal fade " id="cart" role="dialog">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                       <!-- <button class="btn btn-info btn-lg" data-target="#menu"><span class="glyphicon glyphicon-open">Menu</span></button> -->
+                    <h1 class="text-center"><span class="glyphicon glyphicon-shopping-cart"></span>cart</h1>
+                </div>
+                <div class="modal-body">
+                    <p> <h2>OREDER SHOWS HERE !</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tenetur eaque, quae rerum,
+                        consequuntur incidunt alias placeat perspiciatis excepturi, dolores sed nesciunt iure veniam
+                        velit. Quia, qui deleniti facere nostrum eum eius quisquam quis voluptatum amet odio quibusdam
+                        molestiae, quae sed alias ad cumque incidunt, soluta officiis iure! Qui numquam tempora
+                        similique ea, expedita sint nostrum, ab, eum unde et accusantium fuga quas repellat voluptatibus
+                        ratione provident laboriosam consequuntur aliquid ipsa aperiam molestias! Debitis reiciendis
+                        nulla error consequuntur placeat! Labore numquam a velit quaerat magnam, dolor illo eligendi
+                        debitis molestias ex nostrum voluptatum ratione, ipsam harum inventore. Natus unde quae
+                        voluptates. Optio ipsa, quaerat inventore, quis rerum cumque reiciendis deserunt ducimus
+                        voluptates eum, voluptatem voluptatum explicabo impedit. Ullam architecto velit dolore laborum,
+                        esse ipsam exercitationem adipisci iusto, vel accusantium optio.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger pull-left"type="submit" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>cancel</button>
+                    <button class="btn btn-success  pull-right"style="color:red;" type=" submit">confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--fixed cart-->
+        <div class=" pull-right cart"> <a  href="#cart" data-toggle="modal"><button class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button></a></div>
+</body>
+
+</html>
